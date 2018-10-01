@@ -42,5 +42,5 @@ private String workDir = Environment.getExternalStorageDirectory().getAbsolutePa
             "/netease/cloudmusic/Music/"; //Current work directory
 ```
 
-![4th](https://res.cloudinary.com/evidence0john/image/upload/v1538392800/ADHW/4thsimple.png)
+![4th](https://res.cloudinary.com/evidence0john/image/upload/v1538394422/4thsimple_insqhr.png)
 
