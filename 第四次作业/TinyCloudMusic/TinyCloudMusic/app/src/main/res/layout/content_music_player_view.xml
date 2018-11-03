@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.evide.tinycloudmusic.MusicPlayerView"
+    tools:showIn="@layout/app_bar_music_player_view">
+
+</android.support.constraint.ConstraintLayout>
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="80dp"
+        android:id="@+id/tvCurPlay"
+        android:text="未播放任何曲目"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="6">
+        <!--<ListView
+            android:id="@+id/lvMusics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>-->
+        <TextView
+            android:text="Lyrics File Not Found"
+            android:id="@+id/lrcCurLine"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvCurPlayList"
+        android:text="没有播放列表"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:layout_marginVertical="20dp"
+        android:id="@+id/sbProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvCurTime"
+            android:text="00:00:00"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tvEndTime"
+            android:layout_width="0px"
+            android:text="00:00:00"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="end" />
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+        <ImageButton
+            android:layout_marginHorizontal="10dp"
+            android:onClick="prevButtonOnClick"
+            android:background="@mipmap/prev"
+            android:layout_toLeftOf="@id/bPlay"
+            android:id="@+id/bPrev"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <ImageButton
+            android:layout_marginHorizontal="10dp"
+            android:onClick="playButtonOnClick"
+            android:background="@mipmap/play"
+            android:id="@+id/bPlay"
+            android:layout_centerHorizontal="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <ImageButton
+            android:layout_marginHorizontal="10dp"
+            android:background="@mipmap/next"
+            android:onClick="nextButtonOnClick"
+            android:id="@+id/bNext"
+            android:layout_toRightOf="@id/bPlay"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <ImageButton
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/mode_cycle"
+            android:onClick="switchPlayMode"
+            android:id="@+id/bPlayMode"
+            android:layout_toRightOf="@id/bNext"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+</LinearLayout>

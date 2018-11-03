@@ -42,5 +42,9 @@ private String workDir = Environment.getExternalStorageDirectory().getAbsolutePa
             "/netease/cloudmusic/Music/"; //Current work directory
 ```
 
-![4th](https://res.cloudinary.com/evidence0john/image/upload/v1538394422/4thsimple_insqhr.png)
+### 临时版本2
 
+说明：这个版本没有完全完成，使用了 NDK 编译了 Mongoose 服务器，emmm 供以后参考吧。
+* 路径：`~\TinyMusicPlayer`
+
+![t0](https://res.cloudinary.com/evidence0john/image/upload/v1541247530/ADHW/t0.jpg)
