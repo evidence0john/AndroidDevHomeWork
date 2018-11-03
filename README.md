@@ -44,7 +44,7 @@ private String workDir = Environment.getExternalStorageDirectory().getAbsolutePa
 
 ### 临时版本2
 
-说明：这个版本没有完全完成，使用了 NDK 编译了 Mongoose 服务器，emmm 供以后参考吧。
+说明：这个版本没有完全完成，使用了 NDK 编译了 Mongoose 服务器，emmm 供以后参考吧，`\TinyCloudMusic\app\src\main\cpp\mongoose\mongoose.c.res` 和 `mongoose.h.res`，是 Mongoose 的源文件，移除扩展名 `.res` 可直接使用，货值从 Mongoose Http Server 官方获得最新的源文件。
 * 路径：`~\TinyMusicPlayer`
 
 ![t0](https://res.cloudinary.com/evidence0john/image/upload/v1541247530/ADHW/t0.jpg)
