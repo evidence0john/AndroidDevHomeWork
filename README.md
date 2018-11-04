@@ -48,3 +48,15 @@ private String workDir = Environment.getExternalStorageDirectory().getAbsolutePa
 * 路径：`~\TinyMusicPlayer`
 
 ![t0](https://res.cloudinary.com/evidence0john/image/upload/v1541247530/ADHW/t0.jpg)
+
+## 第五次作业
+
+这是一个 java 实现的爬虫,抓取“青果教务管理系统”中的教师课表。注意设置目标地址。
+
+```java
+    private String addressVcode = "http://xxx.xxx.xxx/jwweb/sys/ValidateCode.aspx?t=513";
+    private String addressRPT = "http://xxx.xxx.xxx/jwweb/ZNPK/TeacherKBFB_rpt.aspx";
+    private String referer = "http://xxx.xxx.xxx/jwweb/ZNPK/TeacherKBFB.aspx";
+```
+
+* 最近挺忙的，其实就是我想摸鱼
